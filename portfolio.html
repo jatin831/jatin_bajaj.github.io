@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfoli.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jatin Bajaj Portfolio </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <ul class="left-head">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="right-head">
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-github"></span></a></li>
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="home" id="home">
+        <h1>JATIN BAJAJ</h1>
+        <p>Sophomore Programmer Developer Learner</p>
+        <a href="#about"> <button>View More</button></a>
+    </div>
+
+    <div class="about" id="about">
+        <div class="profile">
+
+        </div>
+        <div class="details">
+            <h1>About Me</h1>
+            <p class="intro">I am an enthusiastic and a work ethic student. I love Coding and Problem Solving. I
+                currently spent my time towrads Competive Coding and Web-Development. I am a Machine Learning enthusiast
+                and want to explore this field further.</p>
+
+            <p><span class="field">Name:</span><span class="myself">Jatin Bajaj</span></p>
+            <p><span class="field">Date of Birth:</span><span class="myself">3 August 2001</span></p>
+            <p><span class="field">Address:</span><span class="myself">Jabalpur, Madhya Pradesh</span></p>
+            <p><span class="field">Zip Code:</span><span class="myself">482002</span></p>
+            <p><span class="field">Phone No.</span><span class="myself">9039058084</span></p>
+            <p><span class="field">email:</span><span class="myself">jatinbajaj2001@gmail.com</span></p>
+
+        </div>
+    </div>
+
+    <div class="skill" id="skills">
+        <div class="education">
+            <h1>EDUCATION</h1>
+            <div class="ed">
+                <div class="logo">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="school">
+                    <span class="year">2019-2023</span>
+                    <h1>Shri GS Institute of Technology and Science (Indore)</h1>
+                    <p class="degree">Bachelor's of Engineering - BE, Information Technology (I.T.)</p>
+                </div>
+            </div>
+            <hr>
+            <div class="ed">
+                <div class="logo">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+
+                <div class="school">
+                    <span class="year">2017-2019</span>
+                    <h1>Little World School (Jabalpur)</h1>
+                    <p class="degree">High School P.C.M. Score - 93.6%</p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="ed">
+                <div class="logo">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="school">
+                    <span class="year">2016-2017</span>
+                    <h1>Little World School (Jabalpur)</h1>
+                    <p class="degree">10th Standard, Score - 8.8 CGPA</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="skill_set">
+            <h1>SKILLS </h1>
+            <p>C <span>90%</span></p>
+            <div class="C"><span></span></div>
+            <p>C++ <span>96%</span></p>
+            <div class="Cpp"><span></span></div>
+            <p>Python <span>84%</span></p>
+            <div class="Python"><span></span></div>
+            <p>Machine Learning <span>75%</span></p>
+            <div class="ML"><span></span></div>
+            <p>Web Development <span>85%</span></p>
+            <div class="WebD"><span></span></div>
+            
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>CONTACT <span>ME</span></h1>
+        <div class="form">
+            <form action="">
+                <input id="name" type="text" placeholder="Your Name">
+                <input id="email" type="email" placeholder="Your Email">
+                <input id="subject" type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button>SEND</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    $(function () {
+        $("a").on("click", function () {
+            $("html, body").animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    });
+</script>
+
+
+</html>
