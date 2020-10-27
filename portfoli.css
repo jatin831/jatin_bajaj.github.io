@@ -61,7 +61,7 @@ nav{
 .home{
     position:relative;
     height:800px;
-    /* background-image : url("image-portfolio/tech.jpg");
+    /* background-image : url("tech.jpg");
     background-size:cover; */
     background-color:rgba(68, 68, 68, 0.075);
     text-align:center;
@@ -86,7 +86,7 @@ nav{
 
 .home::before{
     background-attachment:fixed;
-    background-image : url("image-portfolio/tech4.jpg");
+    background-image : url("tech4.jpg");
     opacity:0.6;
     content: '';
     display: block;
@@ -131,7 +131,7 @@ nav{
 .profile{
     height:650px;
     width:500px;
-    background-image:url("image-portfolio/Me4.jpeg");
+    background-image:url("Me4.jpeg");
     background-size:100% 100%;
 }
 
