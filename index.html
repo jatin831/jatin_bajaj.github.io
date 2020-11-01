@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfoli.css">
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Jatin Bajaj Portfolio </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -12,17 +12,23 @@
 
 <body>
     <nav>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <ul class="left-head">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="myFunction()">Home</a></li>
+                <li><a href="#about" onclick="myFunction()">About</a></li>
+                <li><a href="#skills" onclick="myFunction()">Skills</a></li>
+                <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+
             </ul>
             <ul class="right-head">
-                <li><a href="https://www.instagram.com/jatin_bajaj_2001/"><span class="fa fa-instagram"></span></a></li>
-                <li><a href="https://www.linkedin.com/in/jatin-bajaj-0053661a4/"><span class="fa fa-linkedin"></span></a></li>
-                <li><a href="https://github.com/jatin831"><span class="fa fa-github"></span></a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/jatin_bajaj_2001/" onclick="myFunction()" target="_blank"><span
+                            class="fa fa-instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/jatin-bajaj-0053661a4/" onclick="myFunction()"
+                        target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="https://github.com/jatin831" onclick="myFunction()" target="_blank"><span
+                            class="fa fa-github"></span></a></li>
             </ul>
         </div>
     </nav>
@@ -32,7 +38,8 @@
         <a href="#about"> <button>View More</button></a>
     </div>
 
-    <div class="about" id="about">
+    <div class="about" >
+        <div class="invisible" id="about"></div>
         <div class="profile">
 
         </div>
@@ -44,7 +51,7 @@
 
             <p><span class="field">Name:</span><span class="myself">Jatin Bajaj</span></p>
             <p><span class="field">Date of Birth:</span><span class="myself">3 August 2001</span></p>
-            <p><span class="field">Address:</span><span class="myself">Jabalpur, Madhya Pradesh</span></p>
+            <p><span class="field">Address:</span><span class="myself address">Jabalpur, M.P.</span></p>
             <p><span class="field">Zip Code:</span><span class="myself">482002</span></p>
             <p><span class="field">Phone No.</span><span class="myself">9039058084</span></p>
             <p><span class="field">email:</span><span class="myself">jatinbajaj2001@gmail.com</span></p>
@@ -52,7 +59,8 @@
         </div>
     </div>
 
-    <div class="skill" id="skills">
+    <div class="skill" >
+        <div class="invisible" id="skills"></div>
         <div class="education">
             <h1>EDUCATION</h1>
             <div class="ed">
@@ -112,20 +120,28 @@
             <div class="ML"><span></span></div>
             <p>Web Development <span>85%</span></p>
             <div class="WebD"><span></span></div>
-            
+
         </div>
     </div>
 
-    <div class="contact" id="contact">
+    <div class="contact" >
+        <div class="invisible" id="contact"></div>
         <h1>CONTACT <span>ME</span></h1>
         <div class="form">
             <form action="">
-                <input id="name" type="text" placeholder="Your Name">
-                <input id="email" type="email" placeholder="Your Email">
-                <input id="subject" type="text" placeholder="Subject">
+                <div class="cont">
+                    <div class="a"><input id="name" type="text" placeholder="Your Name"></div>
+                    <div class="a"><input id="email" type="email" placeholder="Your Email"></div>
+                </div>
+
+                <div class="c"><input id="subject" type="text" placeholder="Subject"></div>
+
+
+
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <button>SEND</button>
             </form>
+
         </div>
     </div>
 
@@ -140,6 +156,15 @@
             }, 500);
         });
     });
+
+    function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
 </script>
 
 
